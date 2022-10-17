@@ -12,7 +12,7 @@ function App() {
     labels: ToolsData.map((data) => data.title),
     datasets:
   [{
-    label: '# of tools',
+    label: 'percentage of tools with missing information compared with the total number of tools in the records',
     data: ToolsData.map((data) => data.total),
     backgroundColor: [
       'rgba(255, 99, 132, 0.2)',
