@@ -1,5 +1,5 @@
 import React from 'react';
-import PieChart from './components/PieChart';
+import Metrics from './components/Metrics';
 
 const Home = ({ chartsData }) => (
   <div className="home">
@@ -47,7 +47,7 @@ const Home = ({ chartsData }) => (
       </div>
     </div>
     <div className="pie--chart">
-      <PieChart chartsData={chartsData} />
+      <Metrics chartsData={chartsData} />
     </div>
   </div>
 );
