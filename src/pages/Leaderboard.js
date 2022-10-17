@@ -3,7 +3,7 @@ import React from 'react';
 const Leaderboard = () => (
 
   <>
-    <h1>Leaderboard</h1>
+    <h1>Leaderboard Under Construction..</h1>
   </>
 );
 

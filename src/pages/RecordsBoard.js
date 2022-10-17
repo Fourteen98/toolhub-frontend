@@ -2,7 +2,7 @@ import React from 'react';
 
 const RecordsBoard = () => (
   <>
-    <h1>Records Board</h1>
+    <h1>Records Board Under Construction..</h1>
   </>
 );
 
