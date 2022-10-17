@@ -1,10 +1,12 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 .nav--bar {
   margin: 0 auto;
+  padding: 10px 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -55,4 +57,122 @@
 
 .inactive {
   text-decoration: none;
+}
+
+.home {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+}
+
+.main--container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  margin: 0 auto;
+  padding: 10px 0;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.card--container {
+  max-width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 10px;
+}
+
+.card {
+  position: relative;
+  width: 300px;
+  height: 200px;
+  margin: 0 auto;
+  background: #6b0000;
+  border-radius: 15px;
+}
+
+.face {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.face1 {
+  box-sizing: border-box;
+  padding: 20px;
+}
+
+.description {
+  background-color: #fffc00;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.face2 {
+  transition: 0.5s;
+}
+
+.face2 h2 {
+  padding: 0;
+  font-size: 10em;
+  color: #fff;
+  transition: 0.5s;
+  text-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  z-index: 10;
+}
+
+.card:hover .face.face2 {
+  height: 60px;
+}
+
+.card .face.face2 h2 {
+  font-size: 4em;
+}
+
+.card:nth-child(1) .face.face2 {
+  background-image:
+    linear-gradient(
+      40deg,
+      #d7d7c0 0%,
+      #015593 45%,
+      #00fffc 100%
+    );
+  border-radius: 15px;
+}
+
+.card:nth-child(2) .face.face2 {
+  background-image:
+    linear-gradient(
+      40deg,
+      #d7d7c0 0%,
+      #015593 45%,
+      #00fffc 100%
+    );
+  border-radius: 15px;
+}
+
+.card:nth-child(3) .face.face2 {
+  background-image:
+    linear-gradient(
+      40deg,
+      #d7d7c0 0%,
+      #015593 45%,
+      #00fffc 100%
+    );
+  border-radius: 15px;
+}
+
+.pie--chart {
+  width: 600px;
+  height: 400px;
 }
