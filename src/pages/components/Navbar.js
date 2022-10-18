@@ -4,10 +4,13 @@ import logo from '../../assets/ToolhubLogo.svg';
 
 const Navbar = () => (
   <nav className="nav--bar">
-    <div className="nav--bar--logo">
-      <img className="toolhub--logo" src={logo} alt="toolhub logo" />
-      <h1 className="logo--title">ToolHub</h1>
-    </div>
+    <NavLink to="/">
+      <div className="nav--bar--logo">
+        <img className="toolhub--logo" src={logo} alt="toolhub logo" />
+        <h1 className="logo--title">ToolHub</h1>
+      </div>
+    </NavLink>
+
     <div className="nav--bar--links">
       <NavLink to="/" className={({ isActive }) => (isActive ? 'active nav--link' : 'inactive nav--link')}>
         Home
