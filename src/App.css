@@ -30,8 +30,10 @@
 .logo--title {
   font-size: 1.5rem;
   font-weight: 700;
-  color: #000;
+  color: rgb(48, 101, 216);
   margin-left: 1rem;
+  text-decoration: none !important;
+
 }
 
 .nav--bar--links {
@@ -175,4 +177,17 @@
 .pie--chart {
   width: 500px;
   height: 400px;
+}
+
+.under--construction {
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("https://www.animatedimages.org/data/media/695/animated-under-construction-image-0035.gif");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100vw;
+  height: 100vh;
 }
