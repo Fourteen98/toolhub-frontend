@@ -2,13 +2,13 @@ import React from 'react';
 import CarouselComponent from './components/CarouselComponent';
 import Search from './components/Search';
 
-const Home = () => (
+const Home = ({ tools }) => (
   <div className="home--container">
     <div className="carousel">
       <CarouselComponent />
     </div>
     <div className="search-container">
-      <Search />
+      <Search tools={tools} />
     </div>
   </div>
 );

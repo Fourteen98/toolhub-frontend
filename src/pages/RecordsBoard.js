@@ -1,7 +1,7 @@
 import React from 'react';
 import Metrics from './components/Metrics';
 
-const RecordsBoard = ({ chartsData }) => (
+const RecordsBoard = () => (
   <div className="records--board">
     <div className="main--container">
       <h1>Hover Card For Description</h1>
@@ -47,7 +47,7 @@ const RecordsBoard = ({ chartsData }) => (
       </div>
     </div>
     <div className="pie--chart">
-      <Metrics chartsData={chartsData} />
+      <Metrics />
     </div>
   </div>
 );
