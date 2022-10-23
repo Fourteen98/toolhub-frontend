@@ -111,6 +111,18 @@ const ToolsData = [
     link: 'https://d3js.org/',
     category: 'Design',
   },
+  {
+    id: 17,
+    name: 'D3.js',
+    description: 'A tool for creating and editing D3.js files',
+    link: 'https://d3js.org/',
+    category: 'Design',
+  },
+  {
+    id: 18,
+    name: 'D5.js',
+    description: 'A tool for creating and editing D3.js files',
+  },
 ];
 
 export default ToolsData;

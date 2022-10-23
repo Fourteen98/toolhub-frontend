@@ -28,6 +28,14 @@ const Search = () => {
     }
   };
 
+  const handleReset = () => {
+    try {
+      setAllTools(toolsData);
+    } catch (error) {
+      console.log(error); //eslint-disable-line
+    }
+  };
+
   const renderSearchResults = allTools.map((tool) => (
     <div className="search--results--container" key={tool.id}>
       <div className="search--results--title">
@@ -54,8 +62,8 @@ const Search = () => {
           <button className="" onClick={handleSearch} type="button">
             Search
           </button>
-          <button className="" type="button">
-            Show All
+          <button className="" onClick={handleReset} type="button">
+            Reset
           </button>
         </div>
       </div>
