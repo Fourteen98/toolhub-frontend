@@ -30,9 +30,9 @@ function App() {
       <div className="App">
         <Navbar />
         <Routes>
-          <Route path="/" element={<Home chartsData={toolsData} />} />
+          <Route path="/" element={<Home />} />
           <Route path="leaderboard" element={<Leaderboard />} />
-          <Route path="recordsboard" element={<RecordsBoard />} />
+          <Route path="recordsboard" element={<RecordsBoard chartsData={toolsData} />} />
         </Routes>
       </div>
     </Router>
