@@ -183,7 +183,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: url("https://www.animatedimages.org/data/media/695/animated-under-construction-image-0035.gif");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -193,6 +192,10 @@
 
 /* home page */
 .home--container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
   gap: 20px;
   margin: 0 auto;
   padding: 10px 0;
@@ -202,10 +205,52 @@
 
 /* Caroussel: css */
 .carousel {
+  border: 1px solid blue;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   width: 100%;
   height: 100%;
+}
+
+/* Search : css */
+.search-container {
+  border: 1px solid red;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  width: 100%;
+  height: 100%;
+  padding: 0 30%;
+}
+
+.input-group {
+  border: 1px solid red;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 2%;
+  width: 100%;
+}
+
+input {
+  width: 100%;
+  padding: 1%;
+}
+
+.button-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button {
+  width: 30%;
+  padding: 1%;
+  margin-left: 10px;
+  border-radius: 5px;
 }
