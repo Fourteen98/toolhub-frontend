@@ -32,7 +32,7 @@ const Leaderboard = () => {
           </tbody>
           <tfoot>
             <tr>
-              <td colSpan="3" />
+              <td colSpan="3">Top editors in the last 30 days</td>
             </tr>
           </tfoot>
         </table>
