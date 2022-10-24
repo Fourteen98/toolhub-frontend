@@ -1,4 +1,4 @@
-const ToolsData = [
+const MetricsData = [
   {
     title: 'Total Number of Tools',
     total: 1789,
@@ -9,4 +9,4 @@ const ToolsData = [
   },
 ];
 
-export default ToolsData;
+export default MetricsData;
