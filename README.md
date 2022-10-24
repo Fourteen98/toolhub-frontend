@@ -1,9 +1,10 @@
 # ToolHub Frontend
-> A frontend infrastructure for the ToolHub.
+> A frontend infrastructure for ToolHub. You can search for tools that can be edited and used by the community,
+> see some metrics on overall tools and also check leaderboard on the top editors in the last 30 days.
 
 ## Live Demo
  
-Click [toohub-frontend](https://capable-pixie-fb3a5c.netlify.app/) to have a look at the live demo.
+Click [Here](https://capable-pixie-fb3a5c.netlify.app/) to have a look at the live demo.
 
 ## Built With
 
@@ -39,6 +40,10 @@ To get a local copy up and running follow these simple example steps.
 ### Deployment
     npm run deploy
 
+### Unit Tests
+> But before running the tests, do remove previous snapshots folder created in the test folder.
+> 
+    npm test 
 
 ## Authors
 
