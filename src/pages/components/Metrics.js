@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Pie } from 'react-chartjs-2';
 import Chart from 'chart.js/auto'; // eslint-disable-line
-import MetricsData from "../MetricsData"; // eslint-disable-line
+import MetricsData from "../../data/MetricsData"; // eslint-disable-line
 
 const Metrics = () => {
   const [metricsData] = useState({
