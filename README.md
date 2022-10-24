@@ -1,8 +1,9 @@
 # ToolHub Frontend
-> An infrastructure for the ToolHub frontend
+> A frontend infrastructure for the ToolHub.
 
 ## Live Demo
-[toohub-frontend]()
+ 
+Click [toohub-frontend](https://capable-pixie-fb3a5c.netlify.app/) to have a look at the live demo.
 
 ## Built With
 
@@ -61,3 +62,4 @@ Give a ⭐️ if you like this project!
 ## Acknowledgments
 
 - [wikimedia](https://www.wikimedia.org/)
+

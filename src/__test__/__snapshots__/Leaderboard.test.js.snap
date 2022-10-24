@@ -1,0 +1,155 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Leaderboard renders correctly 1`] = `
+<div
+  className="leaderboard--container"
+>
+  <div
+    className="leaderboard--header"
+  >
+    <h1>
+      Tools Hub Leaderboard
+    </h1>
+  </div>
+  <div
+    className="leaderboard--table"
+  >
+    <table>
+      <thead>
+        <tr>
+          <th>
+            ID
+          </th>
+          <th>
+            Name
+          </th>
+          <th>
+            # Tools
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            8
+          </td>
+          <td>
+            Slavina Stefanova
+          </td>
+          <td>
+            100
+          </td>
+        </tr>
+        <tr>
+          <td>
+            2
+          </td>
+          <td>
+            Patrick Snider
+          </td>
+          <td>
+            90
+          </td>
+        </tr>
+        <tr>
+          <td>
+            7
+          </td>
+          <td>
+            Damilare Adedoyin
+          </td>
+          <td>
+            90
+          </td>
+        </tr>
+        <tr>
+          <td>
+            3
+          </td>
+          <td>
+            Jane Bond
+          </td>
+          <td>
+            80
+          </td>
+        </tr>
+        <tr>
+          <td>
+            4
+          </td>
+          <td>
+            Alex Smith
+          </td>
+          <td>
+            70
+          </td>
+        </tr>
+        <tr>
+          <td>
+            5
+          </td>
+          <td>
+            Caroline Jones
+          </td>
+          <td>
+            60
+          </td>
+        </tr>
+        <tr>
+          <td>
+            9
+          </td>
+          <td>
+            Muhyideen Elias
+          </td>
+          <td>
+            60
+          </td>
+        </tr>
+        <tr>
+          <td>
+            6
+          </td>
+          <td>
+            Karen Williams
+          </td>
+          <td>
+            50
+          </td>
+        </tr>
+        <tr>
+          <td>
+            10
+          </td>
+          <td>
+            James Smith
+          </td>
+          <td>
+            50
+          </td>
+        </tr>
+        <tr>
+          <td>
+            1
+          </td>
+          <td>
+            John Doe
+          </td>
+          <td>
+            40
+          </td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td
+            colSpan="3"
+          >
+            Top editors in the last 30 days
+          </td>
+        </tr>
+      </tfoot>
+    </table>
+  </div>
+</div>
+`;
