@@ -6,6 +6,7 @@ const Search = () => {
   const [searchValue, setSearchValue] = useState('');
   const [toolsData] = useState(ToolsData);
   const [allTools, setAllTools] = useState(toolsData);
+
   const handleChange = (e) => {
     try {
       setSearchValue(e.target.value);
@@ -39,23 +40,19 @@ const Search = () => {
 
   const renderSearchResults = allTools.map((tool) => (
     <div className="search--results--container" key={tool.id}>
-      <div className="search--results--title">
-        <img className="tool--card--img" src={Tool3} alt={tool.name} />
+      <div className="search--results--card">
+        <div className="tool--card--img--container"><img className="tool--card--img" src={Tool3} alt={tool.name} /></div>
         <div className="search-results-content">
           <h3>
-            <span>Name: </span>
             {tool.name}
           </h3>
           <p>
-            <span>Description: </span>
             {tool.description}
           </p>
           <p>
-            <span>URL: </span>
             {tool.link}
           </p>
           <p>
-            <span>Category: </span>
             {tool.category}
           </p>
         </div>
@@ -75,10 +72,10 @@ const Search = () => {
 
         />
         <div className="button-container">
-          <button className="" onClick={handleSearch} type="button">
+          <button className="home--button" onClick={handleSearch} type="button">
             Search
           </button>
-          <button className="" onClick={handleReset} type="button">
+          <button className="home--button" onClick={handleReset} type="button">
             Reset
           </button>
         </div>

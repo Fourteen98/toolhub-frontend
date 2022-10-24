@@ -1,50 +1,44 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react'; // eslint-disable-line
+import LeaderboardData from '../data/LeaderboardData';
 
-const Leaderboard = () => (
-  <div className="leaderboard--container">
-    <div className="leaderboard--header">
-      <h1>Toolhub Leaderboard</h1>
-      <p>This is the list of the top contributors in the last 30 days</p>
+const Leaderboard = () => {
+  const [leaderboardData] = useState(
+    LeaderboardData.sort((a, b) => b.tools - a.tools),
+  );
+  const renderLeaderboard = (leaderboardData.map((user) => (
+    <tr key={user.id}>
+      <td>{user.id}</td>
+      <td>{user.name}</td>
+      <td>{user.tools}</td>
+    </tr>
+  )));
+
+  return (
+    <div className="leaderboard--container">
+      <div className="leaderboard--header">
+        <h1>Tools Hub Leaderboard</h1>
+      </div>
+      <div className="leaderboard--table">
+        <table>
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Name</th>
+              <th># Tools</th>
+            </tr>
+          </thead>
+          <tbody>
+            {renderLeaderboard}
+          </tbody>
+          <tfoot>
+            <tr>
+              <td colSpan="3" />
+            </tr>
+          </tfoot>
+        </table>
+      </div>
     </div>
-    <div className="leaderboard--table">
-      <table>
-        <thead>
-          <tr>
-            <th>Rank</th>
-            <th>Username</th>
-            <th>Number of Tools</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>1</td>
-            <td>John Doe</td>
-            <td>100</td>
-          </tr>
-          <tr>
-            <td>2</td>
-            <td>John Doe</td>
-            <td>100</td>
-          </tr>
-          <tr>
-            <td>3</td>
-            <td>John Doe</td>
-            <td>100</td>
-          </tr>
-          <tr>
-            <td>4</td>
-            <td>John Doe</td>
-            <td>100</td>
-          </tr>
-          <tr>
-            <td>5</td>
-            <td>John Doe</td>
-            <td>100</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-  </div>
-);
+  );
+};
 
 export default Leaderboard;

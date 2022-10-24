@@ -12,7 +12,7 @@ const Navbar = () => (
     </NavLink>
 
     <div className="nav--bar--links">
-      <NavLink to="/" className={({ isActive }) => (isActive ? 'active nav--link' : 'inactive nav--link')}>
+      <NavLink to="/" className={({ isActive }) => (isActive ? 'active nav--link' : 'inactive nav--link')} end>
         Home
       </NavLink>
       <NavLink to="/leaderboard" className={({ isActive }) => (isActive ? 'active nav--link' : 'inactive nav--link')}>

@@ -47,6 +47,7 @@ const LeaderboardData = [
   {
     id: 10,
     name: 'James Smith',
+    tools: 50,
   },
 ];
 
