@@ -8,7 +8,7 @@ exports[`RecordsBoard renders correctly 1`] = `
     className="main--container"
   >
     <h1>
-      Hover Card For Description
+      Records Dashboard
     </h1>
     <div
       className="card--container"
