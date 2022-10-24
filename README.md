@@ -12,8 +12,8 @@ Click [Here](https://capable-pixie-fb3a5c.netlify.app/) to have a look at the li
 - CSS
 - JavaScript
 - React
-- Redux
-- Linters
+- EsLint
+- StyleLint
 
 
 ## Getting Started
