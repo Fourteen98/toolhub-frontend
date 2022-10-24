@@ -34,7 +34,7 @@ To get a local copy up and running follow these simple example steps.
     npm install
 
 ### Usage
-    npm run dev
+    npm start
 
 
 ### Deployment
@@ -67,4 +67,6 @@ Give a ⭐️ if you like this project!
 ## Acknowledgments
 
 - [wikimedia](https://www.wikimedia.org/)
+- [Damilare Adedoyin](https://github.com/Damilare1)
+- [Slavina Stevanova](https://twitter.com/iamslavina?s=21&t=oGcrMGyojqDw2wodMN0fNA)
 
