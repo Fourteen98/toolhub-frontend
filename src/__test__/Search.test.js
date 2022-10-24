@@ -1,10 +1,10 @@
 import React from "react";
 import renderer from "react-test-renderer";
-import Navbar from "../pages/components/Navbar";
+import Search from "../pages/components/Search";
 
-describe('Navbar', () => {
-  it('renders correctly', () => {
-    const tree = renderer.create(<Navbar />).toJSON();
+describe("Search", () => {
+  it("renders correctly", () => {
+    const tree = renderer.create(<Search />).toJSON();
     expect(tree).toMatchSnapshot();
   });
 });
