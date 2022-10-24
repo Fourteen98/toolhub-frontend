@@ -4,7 +4,7 @@ import Metrics from './components/Metrics';
 const RecordsBoard = () => (
   <div className="records--board">
     <div className="main--container">
-      <h1>Hover Card For Description</h1>
+      <h1>Records Dashboard</h1>
       <div className="card--container">
         <div className="card">
           <div className="face1 face">
