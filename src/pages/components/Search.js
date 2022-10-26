@@ -67,7 +67,7 @@ const Search = () => {
           className="form-control"
           type="text"
           onChange={handleChange}
-          placeholder="Search for a tool"
+          placeholder="Search for a tool to edit"
           value={searchValue}
 
         />
