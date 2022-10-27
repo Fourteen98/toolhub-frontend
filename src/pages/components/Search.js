@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import ToolsData from '../../data/ToolsData';
 import Tool3 from '../../assets/Tool3.png';
 
@@ -39,30 +40,27 @@ const Search = () => {
   };
 
   const renderSearchResults = allTools.map((tool) => (
-    <div className="search--results--container" key={tool.id}>
-      <div className="search--results--card">
-        <div className="tool--card--img--container"><img className="tool--card--img" src={Tool3} alt={tool.name} /></div>
-        <div className="search-results-content">
-          <h3>
-            {tool.name}
-          </h3>
-          <p>
-            {tool.description}
-          </p>
-          <p>
-            {tool.link}
-          </p>
-          <p>
-            {tool.category}
-          </p>
+    <Link to={`/tooldetails/${tool.id}`} key={tool.id}>
+      <div className="search--results--container" key={tool.id}>
+        <div className="search--results--card">
+          <div className="tool--card--img--container"><img className="tool--card--img" src={Tool3} alt={tool.name} /></div>
+          <div className="search-results-content">
+            <h3>
+              {tool.name}
+            </h3>
+          </div>
         </div>
       </div>
-    </div>
+    </Link>
   ));
 
   return (
     <>
       <div className="input-group">
+        <h2>
+          All the tools below have missing fields, you can search for a particular tool and
+          click to see missing fields
+        </h2>
         <input
           className="form-control"
           type="text"
