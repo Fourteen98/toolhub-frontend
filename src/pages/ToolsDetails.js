@@ -7,7 +7,6 @@ export default function ToolsDetails() {
   const [toolsData] = React.useState(ToolsData);
   const { id } = useParams();
   const tool = toolsData.find((tool) => tool.id === Number(id));
-  console.log(tool); //eslint-disable-line
   return (
     <div>
       <ExploreTool tool={tool} />
