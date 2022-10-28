@@ -1,15 +1,13 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import ToolsData from '../../data/ToolsData';
-import Tool3 from '../../assets/Tool3.png';
 import Tool2 from '../../assets/Tool2.jpg';
 
 const Search = () => {
   const [searchValue, setSearchValue] = useState('');
   const [toolsData] = useState(ToolsData);
   const [allTools, setAllTools] = useState(toolsData);
-  const toolImg = [Tool2, Tool3];
-  console.log(toolImg[(Math.random() * 2)]); //eslint-disable-line
+
   const handleChange = (e) => {
     try {
       setSearchValue(e.target.value);
