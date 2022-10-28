@@ -42,7 +42,7 @@ const Search = () => {
   };
 
   const renderSearchResults = allTools.map((tool) => (
-    <Link to={`/tooldetails/${tool.id}`} key={tool.id}>
+    <Link style={{ textDecoration: 'none' }} to={`/tooldetails/${tool.id}`} key={tool.id}>
       <div className="search--results--container" key={tool.id}>
         <div className="search--results--card">
           <div className="tool--card--img--container"><img className="tool--card--img" src={Tool2} alt={tool.name} /></div>
@@ -64,7 +64,7 @@ const Search = () => {
     <>
       <div className="input-group">
         <h2>
-          The tools below have missing information. Click on a tool to help us fill in the blanks.
+          Search a tool by name or click on the any tool card below to see it missing fields.
         </h2>
         <input
           className="search"
