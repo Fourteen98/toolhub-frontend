@@ -7,7 +7,9 @@ exports[`RecordsBoard renders correctly 1`] = `
   <div
     className="main--container"
   >
-    <h1>
+    <h1
+      className="header"
+    >
       Records Dashboard
     </h1>
     <div
@@ -28,7 +30,7 @@ exports[`RecordsBoard renders correctly 1`] = `
               <p
                 className="description"
               >
-                The Total Number Of Missing Tools.
+                Total Number Of Tools.
               </p>
             </span>
           </div>

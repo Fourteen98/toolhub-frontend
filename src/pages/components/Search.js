@@ -8,6 +8,7 @@ const Search = () => {
   const [toolsData] = useState(ToolsData);
   const [allTools, setAllTools] = useState(toolsData);
 
+  // handle search input change
   const handleChange = (e) => {
     try {
       setSearchValue(e.target.value);
@@ -16,6 +17,7 @@ const Search = () => {
     }
   };
 
+  // handle search submit
   const handleSearch = (e) => {
     try {
       e.preventDefault();
@@ -31,6 +33,7 @@ const Search = () => {
     }
   };
 
+  // handle search reset
   const handleReset = () => {
     try {
       setAllTools(toolsData);
@@ -39,6 +42,7 @@ const Search = () => {
     }
   };
 
+  // make counts of missing fields for each tool
   const countMissingField = (annotation) => {
     let count = 0;
     Object.keys(annotation).forEach((key) => {
@@ -49,6 +53,7 @@ const Search = () => {
     return count;
   };
 
+  // render tools
   const renderSearchResults = allTools.map((tool) => (
     <Link style={{ textDecoration: 'none' }} to={`/tooldetails/${tool.id}`} key={tool.id}>
       <div className="search--results--container" key={tool.id}>
