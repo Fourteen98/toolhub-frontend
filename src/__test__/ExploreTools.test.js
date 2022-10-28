@@ -2,7 +2,6 @@ import React from 'react';
 import renderer from 'react-test-renderer';
 import ExploreTool from '../pages/components/ExploreTool';
 import ToolsData from '../data/ToolsData';
-import {useParams} from "react-router-dom";
 
 describe('ExploreTool', () => {
   const tool = ToolsData.find((tool) => tool.id === Number(1));
