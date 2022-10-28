@@ -5,6 +5,7 @@ const Leaderboard = () => {
   const [leaderboardData] = useState(
     LeaderboardData.sort((a, b) => b.tools - a.tools),
   );
+
   const renderLeaderboard = (leaderboardData.map((user) => (
     <tr key={user.id}>
       <td>{user.id}</td>
@@ -19,7 +20,7 @@ const Leaderboard = () => {
         <h1>Tools Hub Leaderboard</h1>
       </div>
       <div className="leaderboard--table">
-        <table>
+        <table className="leaderboard--tbl">
           <thead>
             <tr>
               <th>ID</th>

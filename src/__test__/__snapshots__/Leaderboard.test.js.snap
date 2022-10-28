@@ -14,7 +14,9 @@ exports[`Leaderboard renders correctly 1`] = `
   <div
     className="leaderboard--table"
   >
-    <table>
+    <table
+      className="leaderboard--tbl"
+    >
       <thead>
         <tr>
           <th>

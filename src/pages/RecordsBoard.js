@@ -4,13 +4,13 @@ import Metrics from './components/Metrics';
 const RecordsBoard = () => (
   <div className="records--board">
     <div className="main--container">
-      <h1>Records Dashboard</h1>
+      <h1 className="header">Records Dashboard</h1>
       <div className="card--container">
         <div className="card">
           <div className="face1 face">
             <div className="content">
               <span className="starts">
-                <p className="description">The Total Number Of Missing Tools.</p>
+                <p className="description">Total Number Of Tools.</p>
               </span>
             </div>
           </div>

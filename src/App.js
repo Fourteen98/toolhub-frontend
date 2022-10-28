@@ -4,6 +4,7 @@ import Home from './pages/Home';
 import Leaderboard from './pages/Leaderboard';
 import RecordsBoard from './pages/RecordsBoard';
 import Navbar from './pages/components/Navbar';
+import ToolsDetails from './pages/ToolsDetails';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="leaderboard" element={<Leaderboard />} />
           <Route path="recordsboard" element={<RecordsBoard />} />
+          <Route path="/tooldetails/:id" element={<ToolsDetails />} />
         </Routes>
       </div>
     </Router>
