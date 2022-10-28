@@ -3,13 +3,7 @@ import Tool2 from '../../assets/Tool2.jpg';
 
 export default function ExploreTool({ tool }) {
   const annotationsField = tool.Annotations[0];
-  console.log(annotationsField);
-  // const renderAnnotations = annotationsField.map((annotation) => (
-  //   <tr id={annotation.key}>
-  //     <td>{annotation.key}</td>
-  //     <td>{annotation.value}</td>
-  //   </tr>
-  // ));
+
   const returnNull = (field) => {
     if (field === '' || field === null) {
       return 'Missing!';

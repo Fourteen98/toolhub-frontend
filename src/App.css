@@ -1,3 +1,5 @@
+/* stylelint-disable no-descending-specificity */
+
 * {
   margin: 0;
   padding: 0;
@@ -81,9 +83,9 @@
   box-sizing: border-box;
 }
 
-.main--container .header{
+.main--container .header {
   font-size: 2rem;
-  font-weight: 700;
+  font-weight: 900;
   color: #949292;
 }
 
@@ -251,7 +253,7 @@
   width: 100%;
 }
 
-.input-group h2{
+.input--group--header {
   font-size: 1.5rem;
   font-weight: 900;
   color: #ddd;
@@ -343,15 +345,21 @@ input {
   height: 100%;
 }
 
-.search-results-content h3{
-  font-size: 1.9rem;
+.search-results-content h3 {
+  font-size: 1.3rem;
   font-weight: 600;
   color: #2088ff;
   border-bottom-style: none;
 }
 
-.search-results-content h5{
+.search-results-content h5 {
   font-size: 1rem;
+  font-weight: 400;
+  color: #2088ff;
+}
+
+.search-results-content h6 {
+  font-size: 0.8rem;
   font-weight: 400;
   color: #2088ff;
 }
@@ -436,13 +444,13 @@ input {
   padding: 16px;
 }
 
-.leaderboard--tbl tfoot tr td{
+.leaderboard--tbl tfoot tr td {
   padding-right: 8%;
 }
 
 
 /* Explore tools page */
-.explore--tools--container{
+.explore--tools--container {
   display: grid;
   grid-template-columns: 1fr 2fr 2fr;
   gap: 20px;
@@ -452,11 +460,7 @@ input {
   height: 100%;
 }
 
-
-.explore--tools--container img{
-}
-
-.left--container{
+.left--container {
   width: 100%;
   height: 100%;
   display: flex;
@@ -465,16 +469,16 @@ input {
   gap: 20px;
 }
 
-.tool--name{
+.tool--name {
   font-size: 2rem;
   font-weight: 700;
 }
 
-.right--container{
+.right--container {
   border: 1px solid green;
 }
 
-.explore--tfoot td{
+.explore--tfoot td {
   background-color: rgb(48, 101, 216);
 }
 
@@ -482,12 +486,11 @@ input {
   background-color: #ff4f4f;
 }
 
-.explore--tools--tbl{
+.explore--tools--tbl {
   border-collapse: collapse;
   width: 100%;
   border: 1px solid #ddd;
   font-size: 18px;
-
 }
 
 .explore--tools--tbl thead {

@@ -41,6 +41,16 @@ const Search = () => {
     }
   };
 
+  const countMissingField = (annotation) => {
+    let count = 0;
+    Object.keys(annotation).forEach((key) => {
+      if (annotation[key] === '') {
+        count += 1;
+      }
+    });
+    return count;
+  };
+
   const renderSearchResults = allTools.map((tool) => (
     <Link style={{ textDecoration: 'none' }} to={`/tooldetails/${tool.id}`} key={tool.id}>
       <div className="search--results--container" key={tool.id}>
@@ -54,6 +64,10 @@ const Search = () => {
               Author:
               {tool.Author}
             </h5>
+            <h6>
+              # of missing fields:
+              {countMissingField(tool.Annotations[0])}
+            </h6>
           </div>
         </div>
       </div>
@@ -63,7 +77,7 @@ const Search = () => {
   return (
     <>
       <div className="input-group">
-        <h2>
+        <h2 className="input--group--header">
           Search a tool by name or click on the any tool card below to see it missing fields.
         </h2>
         <input
