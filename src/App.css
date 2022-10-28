@@ -268,6 +268,15 @@ input {
   padding: 1%;
   margin-left: 10px;
   border-radius: 5px;
+  border: none;
+  box-shadow: 0 0 5px #000;
+  background-color: #a9c9f6;
+}
+
+.home--button:hover {
+  background-color: #2088ff;
+  color: #fff;
+  cursor: pointer;
 }
 
 .search--results {
@@ -328,13 +337,18 @@ input {
   height: 100%;
 }
 
-.search-results-content h3, h5{
-  font-size: 1.5rem;
+.search-results-content h3{
+  font-size: 1.9rem;
   font-weight: 600;
   color: #2088ff;
   border-bottom-style: none;
 }
 
+.search-results-content h5{
+  font-size: 1rem;
+  font-weight: 400;
+  color: #2088ff;
+}
 
 /* leaderboard */
 .leaderboard--container {

@@ -70,7 +70,7 @@ const Search = () => {
           className="search"
           type="text"
           onChange={handleChange}
-          placeholder="Search for a tool to edit"
+          placeholder="Search for a tool"
           value={searchValue}
 
         />

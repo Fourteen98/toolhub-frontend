@@ -89,7 +89,7 @@ export default function ExploreTool({ tool }) {
           <tfoot className="explore--tfoot">
             <tr>
               <td colSpan="3">
-                Fields With red background are missing!
+                NB: Fields with red background are missing!
               </td>
             </tr>
           </tfoot>
